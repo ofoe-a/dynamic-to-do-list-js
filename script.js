@@ -8,15 +8,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (taskText !== '') {
       // Create a new li element
-      const li = document.createElement('li');
-      li.textContent = taskText;
+        const li = document.createElement('li');
+        li.textContent = taskText;
 
-      const removeButton = document.createElement('button');
-      removeButton.textContent = 'Remove';
-      removeButton.className = 'remove-btn';
-
+        const removeButton = document.createElement('button');
+        removeButton.textContent = 'Remove';
+        removeButton.classList.add('remove-btn');
      
-      removeButton.onclick = function () {
+        removeButton.onclick = function () {
         taskList.removeChild(li);
       };
 
